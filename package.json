@@ -2,6 +2,7 @@
   "name": "c",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://danielhan214.github.io/react-calculate_brackets",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
@@ -16,6 +17,7 @@
     "cleanBuild": "rimraf ./build/*",
     "build": "npm run cleanBuild && set \"GENERATE_SOURCEMAP=false\" && react-scripts build ",
     "test": "react-scripts test",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -37,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "tailwindcss": "^3.0.23"
   }
 }
